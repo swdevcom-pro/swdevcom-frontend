@@ -1,0 +1,710 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #f5f5f5;
+  background-image: url("../images/tasarim/bg.png");
+  font-size: 14px;
+  font-family: 'Ubuntu', sans-serif;
+  color: #222;
+}
+
+.temel {
+  width: 100%;
+  height: auto;
+}
+
+.temiz {
+  clear: both;
+}
+
+@media only screen and (min-width:900px) {
+  /* Desktop */
+  .ortala {
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  .tepe {
+    width: 98%;
+    height: 50px;
+    top: 0;
+    left: 0;
+    position: absolute;
+    border-bottom: solid 1px #626572;
+    padding: 1%;
+  }
+
+  .logo {
+    float: left;
+    font-size: 24px;
+    color: #fff;
+  }
+
+  .logo img {
+    height: 50px;
+  }
+
+  .ustmenu {
+    float: right;
+    color: #fff;
+    font-size: 14px;
+    line-height: 24px;
+    display: block;
+  }
+
+  .ustmenu > ul {
+    list-style-type: none;
+    margin: 0;
+  }
+
+  .ustmenu > ul > li {
+    float: left;
+    padding: 10px;
+  }
+
+  .ustmenu > ul > li > a {
+    color: #ccc;
+    text-decoration: none;
+    padding: 10px;
+  }
+
+  .ustmenu > ul > li > a:hover {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+  }
+
+  .mobilMenu {
+    display: none;
+  }
+  /* Slider */
+  .slider {
+    background: url("../images/slider/tanitim2.jpg") top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    min-height: 630px;
+    height: 100%;
+  }
+
+  .sliderMetin {
+    width: 43%;
+    text-align: center;
+    padding-top: 20%;
+    color: #fff;
+    font-size: 20px;
+    margin: 0 auto;
+    font-family: Georgia, sans-serif;
+  }
+
+  .sliderMetin > h2 {
+    font-size: 50px;
+  }
+
+  .sliderMetin > p {
+    padding-top: 10px;
+  }
+
+  .kaydir {
+    margin-top: 120px;
+    cursor: pointer;
+  }
+  /* Hakkımızda */
+  .hakkimizda {
+    background-color: #fff;
+    min-height: 400px;
+  }
+
+  .hakkimizda h1 {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+    color: #444;
+  }
+
+  .hakkimizda p {
+    text-align: center;
+    font-size: 18px;
+    color: #444;
+    padding-bottom: 30px;
+  }
+
+  /* Yaptıklarımız */
+  .yaptiklarimiz {
+    background-color: #222;
+    color: #fff;
+    min-height: 350px;
+    text-align: center;
+  }
+
+  .yaptiklarimiz h1 {
+    padding-top: 20px;
+    text-align: center;
+  }
+
+  .parca {
+    width: 25%;
+    height: auto;
+    float: left;
+    margin-top: 40px;
+    font-size: 18px;
+  }
+
+  .parca > img {
+    width: 90px;
+  }
+
+  .parca > h3 {
+    padding-bottom: 10px;
+  }
+
+  /* Ekip */
+  .ekip {
+    width: 100%;
+    min-height: 300px;
+    background-color: #fff;
+  }
+
+  .ekip h1 {
+    padding-top: 20px;
+    padding-bottom: 30px;
+    text-align: center;
+    color: #444;
+  }
+
+  .uye {
+    width: 18.8%;
+    margin-right: 1%;
+    margin-bottom: 1%;
+    float: left;
+    text-align: center;
+  }
+
+  .uye a {
+    color: #222;
+    text-decoration: none;
+  }
+
+  .resim {
+    width: 100%;
+  }
+
+  .resim > img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border: solid 5px #047abf;
+    border-radius: 50%;
+  }
+
+  .aciklama {
+    width: 150px;
+    text-align: center;
+    background-color: #047abf;
+    color: #fff;
+    margin: 0 auto;
+    padding: 5px;
+    position: relative;
+    top: -42px;
+    border-radius: 30px 0;
+  }
+  /* Alt */
+  .alt {
+    color: #fff;
+    width: 98%;
+    padding: 1%;
+    background-color: #222;
+  }
+
+  .altUst{
+    width: 100%;
+    background-color: #333;
+    height: 300px;
+    color: #f1f1f1;
+  }
+
+  .altParca{
+    margin-left: 4%;
+    padding-top: 20px;
+    width: 28%;
+    float: left;
+  }
+
+  .altParca h3{
+    border-bottom: solid 1px #777;
+    padding: 10px;
+  }
+
+  .altParca p{
+    padding: 10px;
+  }
+
+  .altParca ul{
+    list-style-type: none;
+  }
+
+  .altParca ul li{
+    padding: 10px;
+    border-bottom: solid 1px #444;
+  }
+
+  .altParca ul li:hover{
+    background-color: #444;
+  }
+
+  .altParca ul li a{
+    color: #fff;
+    text-decoration: none;
+  }
+}
+@media only screen and (max-width:899px) and (min-width:600px) {
+  /* Tablet */
+  .ortala {
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  .tepe {
+    width: 99%;
+    height: 50px;
+    top: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+    border-bottom: solid 1px #626572;
+    padding: 0.5%;
+  }
+
+  .logo {
+    float: left;
+    font-size: 19px;
+    color: #fff;
+    padding: 10px;
+  }
+
+  .logo img{
+    height: 50px;
+  }
+
+  .mobilMenu {
+    float: right;
+    padding-top: 2%;
+  }
+
+  .ustmenu {
+    color: #fff;
+    font-size: 14px;
+    display: none;
+    width: 100%;
+    float: none;
+    background-color: #222;
+    position: absolute;
+    top: 55px;
+    left: 0;
+    z-index: 2;
+  }
+
+  .ustmenu > ul {
+    display: block;
+  }
+
+  .ustmenu > ul > li {
+    display: block;
+    padding: 1.5%;
+  }
+
+  .ustmenu > ul > li:hover {
+    background-color: #444;
+  }
+
+  .ustmenu > ul > li > a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+  }
+  /* Slider */
+  .slider {
+    background: url("../images/slider/tanitim2.jpg") top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    min-height: 400px;
+    height: 100%;
+  }
+
+  .sliderMetin {
+    width: 83%;
+    text-align: center;
+    padding-top: 10%;
+    color: #fff;
+    font-size: 20px;
+    margin: 0 auto;
+    font-family: Georgia, sans-serif;
+  }
+
+  .sliderMetin > h2 {
+    font-size: 50px;
+  }
+
+  .sliderMetin > p {
+    padding-top: 10px;
+  }
+  /* Hakkımızda */
+  .hakkimizda {
+    background-color: #fff;
+    min-height: 200px;
+  }
+
+  .hakkimizda h3 {
+    text-align: center;
+    margin: 0 auto;
+    font-size: 34px;
+    padding-top: 20px;
+  }
+
+  .hakkimizda > p {
+    text-align: center;
+    font-size: 14px;
+  }
+  /* Yaptıklarımız */
+  .yaptiklarimiz {
+    background-color: #222;
+    color: #fff;
+    min-height: 400px;
+  }
+
+  .yaptiklarimiz h1 {
+    padding-top: 20px;
+  }
+
+  .parca {
+    width: 25%;
+    height: auto;
+    float: left;
+    margin-top: 40px;
+  }
+
+  .parca > img {
+    width: 90px;
+  }
+
+  .parca > h3 {
+    padding-bottom: 10px;
+  }
+  /* Ekip */
+  .ekip {
+    width: 100%;
+    min-height: 300px;
+    background-color: #e0f2ca;
+  }
+
+  .ekip h1 {
+    padding-top: 20px;
+    padding-bottom: 30px;
+    text-align: center;
+  }
+
+  .uye {
+    border: solid 1px #bbb;
+    background-color: #f1f1f1;
+    width: 48%;
+    height: 300px;
+    margin-right: 1%;
+    margin-bottom: 1%;
+    float: left;
+    text-align: center;
+  }
+
+  .resim {
+    width: 100%;
+  }
+
+  .resim > img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-bottom: solid 1px #bbb;
+  }
+
+  .aciklama {
+    margin-top: 15px;
+    text-align: center;
+  }
+
+  .detay {
+    width: 98%;
+    padding: 1%;
+    background-color: #222;
+    margin-top: 25px;
+  }
+
+  .detay > a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px;
+  }
+  /* Alt */
+  .alt {
+    color: #fff;
+    width: 98%;
+    padding: 1%;
+    background-color: #222;
+  }
+
+  .altUst{
+    width: 100%;
+    background-color: #333;
+    min-height: 300px;
+    color: #f1f1f1;
+  }
+
+  .altParca{
+    padding-top: 20px;
+    width: 100%;
+    float: left;
+  }
+
+  .altParca h3{
+    border-bottom: solid 1px #777;
+    padding: 10px;
+  }
+
+  .altParca p{
+    padding: 10px;
+  }
+
+  .altParca ul{
+    list-style-type: none;
+  }
+
+  .altParca ul li{
+    padding: 10px;
+    border-bottom: solid 1px #444;
+  }
+
+  .altParca ul li:hover{
+    background-color: #444;
+  }
+
+  .altParca ul li a{
+    color: #fff;
+    text-decoration: none;
+  }
+}
+@media only screen and (max-width:599px) {
+  /* Mobil */
+  .ortala {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  .tepe {
+    width: 100%;
+    max-height: 50px;
+    background-color: #2d98d0;
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+
+  .logo {
+    float: left;
+    font-size: 19px;
+    color: #fff;
+  }
+
+  .logo img{
+    height: 50px;
+  }
+
+  .mobilMenu {
+    float: right;
+    padding: 2%;
+    margin-right: 3%;
+  }
+
+  .ustmenu {
+    color: #fff;
+    font-size: 14px;
+    width: 100%;
+    float: none;
+    display: none;
+    background-color: #222;
+    position: absolute;
+    top: 50px;
+  }
+
+  .ustmenu > ul {
+    display: block;
+  }
+
+  .ustmenu > ul > li {
+    display: block;
+    padding: 1.5%;
+  }
+
+  .ustmenu > ul > li:hover {
+    background-color: #444;
+  }
+
+  .ustmenu > ul > li > a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+  }
+
+  .slider {
+    display: none;
+  }
+  /* Hakkımızda */
+  .hakkimizda {
+    background-color: #fff;
+    min-height: 200px;
+    text-align: center;
+    padding: 5px;
+    font-size: 100%;
+  }
+
+  .hakkimizda h3 {
+    text-align: center;
+    margin: 0 auto;
+    font-size: 34px;
+    padding-top: 20px;
+  }
+
+  .hakkimizda > p {
+    text-align: center;
+    font-size: 14px;
+  }
+  /* Yaptıklarımız */
+  .yaptiklarimiz {
+    background-color: #222;
+    color: #fff;
+    min-height: 400px;
+    text-align: center;
+  }
+
+  .yaptiklarimiz h1 {
+    padding-top: 20px;
+  }
+
+  .parca {
+    width: 100%;
+    height: auto;
+    margin-top: 40px;
+  }
+
+  .parca > img {
+    width: 120px;
+  }
+
+  .parca > h3 {
+    padding-bottom: 10px;
+  }
+  /* Ekip */
+  .ekip {
+    width: 100%;
+    min-height: 300px;
+    background-color: #e0f2ca;
+  }
+
+  .ekip h1 {
+    padding-top: 20px;
+    padding-bottom: 30px;
+    text-align: center;
+  }
+
+  .uye {
+    border: solid 1px #bbb;
+    background-color: #f1f1f1;
+    width: 97.8%;
+    height: 300px;
+    margin-right: 1%;
+    margin-bottom: 1%;
+    margin-left: 1%;
+    float: left;
+    text-align: center;
+  }
+
+  .resim {
+    width: 100%;
+  }
+
+  .resim > img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-bottom: solid 1px #bbb;
+  }
+
+  .aciklama {
+    margin-top: 15px;
+    text-align: center;
+  }
+
+  .detay {
+    width: 98%;
+    padding: 1%;
+    background-color: #222;
+    margin-top: 25px;
+  }
+
+  .detay > a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px;
+  }
+  /* Alt */
+  .alt {
+    color: #fff;
+    width: 98%;
+    padding: 1%;
+    background-color: #222;
+  }
+
+  .altUst{
+    width: 100%;
+    background-color: #333;
+    min-height: 300px;
+    color: #f1f1f1;
+  }
+
+  .altParca{
+    padding-top: 20px;
+    width: 100%;
+  }
+
+  .altParca h3{
+    border-bottom: solid 1px #777;
+    padding: 10px;
+  }
+
+  .altParca p{
+    padding: 10px;
+  }
+
+  .altParca ul{
+    list-style-type: none;
+  }
+
+  .altParca ul li{
+    padding: 10px;
+    border-bottom: solid 1px #444;
+  }
+
+  .altParca ul li:hover{
+    background-color: #444;
+  }
+
+  .altParca ul li a{
+    color: #fff;
+    text-decoration: none;
+  }
+}
